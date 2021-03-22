@@ -43,7 +43,7 @@ def GetFile(filename):#the function is used SSL to download dailyfile from Iniff
      root = os.getcwd()  
      sftpfilepath = filepath + filename
      localfilepath = path +filename
-     transport = paramiko.Transport(('SFTPAP.Extra.infineon.com', 22))
+     transport = paramiko.Transport(('xxx.com', 22))##YOU SERVER addreess here
      transport.connect(username='DAPLENELEXT-FTP', password='Siapmkd!@#$%^&*()')
      sftp = paramiko.SFTPClient.from_transport(transport)
      sftp.get(sftpfilepath, localfilepath)
